@@ -1,0 +1,10 @@
+
+
+
+#main{
+   background-image: url("./assets/background.jpg");
+   background-color: skyblue;
+}
+#head{
+   height: fit-content;
+}
