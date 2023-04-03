@@ -3,8 +3,39 @@
 
 #main{
    background-image: url("./assets/background.jpg");
-   background-color: skyblue;
 }
 #head{
    height: fit-content;
+}
+.content{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+   padding: 20px 20px;
+}
+.dataItem{
+   background-color: #F8F8FF;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 5px;
+}
+.itemContent{
+   font-weight: 500;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: inherit;
+   color: green;
+   height: 50%;
+   margin: 10px 10px;
+}
+
+.title{
+   font-weight: 500;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: inherit;
+   color: skyblue;
+   height: 50%;
+   margin: 10px 10px;
 }
