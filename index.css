@@ -3,14 +3,42 @@
 
 #main{
    background-image: url("./assets/background.jpg");
+   display: grid;
+   grid-template-rows: 1fr 10fr;
 }
 #head{
    height: fit-content;
+   max-height: 60px;
+   display: flex;
+   justify-content: space-between;
+   background-color: #F8F8FF;
+   align-items: center;
 }
-.content{
+#search{
+   border: 2px solid brown;
+   border-radius: 10px;
+}
+#search #searchInput{
+     height: 30px;
+     margin-right: 0px;
+     background-color: inherit;
+     border: none;
+     text-align: center;
+     font-size: 1rem;
+     text-decoration: none;
+}
+#search button{
+   margin-left: 0px;
+   height: 30px;
+   width: 60px;
+   border: none;
+   background-color: inherit;
+}
+#content{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(100px,auto));
    padding: 20px 20px;
+   column-gap: 20px;
 }
 .dataItem{
    background-color: #F8F8FF;
@@ -38,4 +66,8 @@
    color: skyblue;
    height: 50%;
    margin: 10px 10px;
+}
+
+#search #searchInput:focus{
+   border: none;
 }
